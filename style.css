@@ -29,6 +29,8 @@ ul {
     padding-left: 0 !important;
 }
 
+
+
 body {
     padding: 20px;
     overflow: hidden;
@@ -46,8 +48,8 @@ html {
 
 }
 
-/*Seccion de la barra de navegacion izquierda*/
 
+/*Imagenes*/
 .link__left__item img {
     object-fit: cover;
     width: 20px;
@@ -55,6 +57,10 @@ html {
     margin-right: 10px;
     color: white;
 }
+
+/*Seccion de la barra de navegacion izquierda*/
+
+
 
 .container_left {
     display: flex;
@@ -225,6 +231,14 @@ html {
     grid-row: 1/2;
 }
 
+.grid-box-item1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    width: 100%;
+
+}
+
 .box {
     background-color: var(--color-1);
     color: #fff;
@@ -248,10 +262,75 @@ html {
 
 hr {
     width: 50%;
-    margin: 0 auto !important;
+    margin: 0 auto 10px auto !important;
     background-color: #fff;
     border: 0;
     padding: 0;
     height: 1px !important;
 
+}
+
+
+
+.container-title_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.bg-icono_item1 {
+    background-color: var(--color-4);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-icono_item1:hover {
+    background-color: #fff;
+}
+
+.bg-icono_item1:hover .lupa {
+    content: url("/imagenes/lupa_negra.png");
+}
+
+.box-content-item1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    grid-column: 2/-2;
+    grid-row: 2/3;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.container-item2 {
+    display: grid;
+    grid-column: 2/-2;
+    grid-row: 2/3;
+    align-items: center;
+    display: flex;
+
+}
+
+.tamaño {
+    width: 50%;
+    text-align: center;
+}
+
+.container-item1 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/1;
+    align-items: center;
+    display: flex;
+
+}
+
+.lupa {
+    width: 20px;
+    height: 20px;
 }
